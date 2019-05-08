@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190507 20:58:47.316" generator="Robot 3.1.1 (Python 2.7.16 on win32)">
+<suite source="C:\Users\jpatel1\Documents\ADP_DEMO_PROJECT\ADP_Login_Testcases\ADP_Login_Usecase.robot" id="s1" name="ADP Login Usecase">
+<test id="s1-t1" name="Doing Login by inputing valide username and password">
+<kw type="setup" name="Open Browser" library="ExtendedSelenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://runpayroll.adp.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190507 20:58:47.629" level="INFO">Opening browser 'chrome' to base url 'https://runpayroll.adp.com/'</msg>
+<status status="PASS" endtime="20190507 20:58:52.911" starttime="20190507 20:58:47.629"></status>
+</kw>
+<kw name="Set Window Size" library="ExtendedSelenium2Library">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>1920</arg>
+<arg>1080</arg>
+</arguments>
+<status status="PASS" endtime="20190507 20:58:53.072" starttime="20190507 20:58:52.913"></status>
+</kw>
+<kw name="Title Should Be" library="ExtendedSelenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>ADP RUN</arg>
+</arguments>
+<msg timestamp="20190507 20:58:53.081" level="INFO">Page title is 'ADP RUN'.</msg>
+<status status="PASS" endtime="20190507 20:58:53.081" starttime="20190507 20:58:53.073"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190507 20:58:56.083" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20190507 20:58:56.083" starttime="20190507 20:58:53.083"></status>
+</kw>
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="txtLoginId"]</arg>
+<arg>Wavetest004</arg>
+</arguments>
+<msg timestamp="20190507 20:58:56.085" level="INFO">Typing text 'Wavetest004' into text field '//*[@id="txtLoginId"]'</msg>
+<status status="PASS" endtime="20190507 20:58:56.319" starttime="20190507 20:58:56.084"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="btnNext"]</arg>
+</arguments>
+<msg timestamp="20190507 20:58:56.321" level="INFO">Clicking element '//*[@id="btnNext"]'.</msg>
+<status status="PASS" endtime="20190507 20:58:58.290" starttime="20190507 20:58:56.321"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="ExtendedSelenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 20:59:00.536" starttime="20190507 20:58:58.291"></status>
+</kw>
+<doc>Going to ADP Login page and doing successfull login</doc>
+<status status="PASS" endtime="20190507 20:59:00.538" critical="yes" starttime="20190507 20:58:47.628"></status>
+</test>
+<doc>Checking Sevral Login Scenario</doc>
+<status status="PASS" endtime="20190507 20:59:00.542" starttime="20190507 20:58:47.319"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ADP Login Usecase" pass="1">ADP Login Usecase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
